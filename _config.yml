@@ -1,10 +1,10 @@
 # Site settings
-title: Hautarztpraxis Kautzky
+title: Dipl.-Med. Oda Kautzky
 email: your-email@domain.com
 url: https://www.hautarztpraxis-kautzky.de
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
-skills: "Dipl. Med Oda Kautzky"
+subtitle: "Ihre Hautarztpraxis in Böhlen"
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 meta_author: Kautzky Oda
 
 # Google webmaster tools
@@ -13,26 +13,16 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
-
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
+  primary: c9a0dc #80B3FF
+  primary-rgb: "201,160,220" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: Oda Kautzky
   location: Location
   social: Around the Web
   credits: Credits
@@ -52,8 +42,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Jahnstraße 21
+  - line: 04564 Böhlen
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
@@ -63,9 +53,29 @@ markdown: kramdown
 permalink: pretty
 
 #for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
+opening:
+  - day: Montag
+    time: 09:00–12:00 und 16:00–18:00
+    note: Mit Termin
+  - day: Dienstag
+    time: 09:00-10:00
+    note: Offene Sprechstunde
+  - day: Mittwoch
+    time: 09:00–12:00 und 16:00–18:00
+    note: Normale Sprechstunde
+  - day: Donnerstag
+    time: Geschlossen
+    note:
+  - day: Freitag
+    time: 08:00–11:00
+    note: Normale Sprechstunde
+
+announcements:
+  - title: Geänderte Öffungszeiten
+    date: 11.11.2021
+    message: |
+      Im Dezember haben wir andere Öffnungszeiten die sie hier sehen...
+  - title: Neue Telefonnummer
+    date: 06.12.2021
+    message: |
+      Wir sind bald unter einer anderen Nummer erreichbar
